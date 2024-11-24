@@ -1,8 +1,0 @@
-# - name: daemon reload
-#   ansible.builtin.systemd_service:
-#     daemon_reload: true
-
-- name: restart nodejs
-  ansible.builtin.service:
-    name: nodejs
-    state: restarted
