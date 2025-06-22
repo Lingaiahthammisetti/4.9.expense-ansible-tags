@@ -8,7 +8,6 @@
 # ansible-playbook main.yaml -e component=backend
 # ansible-playbook main.yaml -e component=frontend
 
-
 # ansible-playbook main.yaml -e component=backend -t deployment
 
 
