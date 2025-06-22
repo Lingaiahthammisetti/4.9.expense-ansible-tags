@@ -24,7 +24,7 @@ resource "aws_instance" "ansible_master" {
     ami           = data.aws_ami.rhel_info.id
     instance_type = var.ansible_master.instance_type
     vpc_security_group_ids = [var.allow_all]
-    #user_data = file("${path.module}/ansible.sh")
+    user_data = file("${path.module}/ansible.sh")
     # user_data = <<-EOF
     #           #!/bin/bash
     #           sudo dnf install ansible -y       
